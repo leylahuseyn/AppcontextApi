@@ -1,6 +1,13 @@
 .card{
-    height: 300px !important;
+    height: 450px !important;
+    display: flex;
+    justify-content: space-around;
+    
     img{
-        height: 200px;
+        height: 300px;
     }
-}
+   .hearticon{
+    margin-left: 200px;
+    margin-top: 10px;
+   }
+}   
