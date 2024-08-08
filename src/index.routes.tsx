@@ -32,6 +32,10 @@ const ROUTES=[
             path:"/:id",
             element:<Detail/>
         }
+        , {
+            path:"/AdminHome",
+            element:<AdminHome/>
+        }
        ] 
     },
     {

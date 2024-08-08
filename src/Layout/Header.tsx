@@ -5,18 +5,7 @@ import Maincontext from '../Context/Context'
 const Header = () => {
     const { fav } = useContext(Maincontext)
     return (
-        // <div>
-        //     <Link to="/">Home</Link>
-        //     <Link to="/WishList">WishList</Link>
-        // {
-        //     fav.length>0 &&
-        //     (
-        //         <span>({fav.length})</span>
-        //     )
-        // }
-        //     <Link to="/Product">Product</Link>
-        //     <Link to="/Contact">Contact</Link>
-        // </div>
+       
         <header>
             <nav className="navbar navbar-expand-lg  ">
                 <div className="container">
@@ -33,16 +22,21 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/WishList">WishList</Link>
+                                    <Link className="nav-link" to="/WishList">WishList <sup>
                                     {
-                                        fav.length > 0 &&
+                                        fav.length >= 0 &&
                                         (
-                                            <span>({fav.length})</span>
+                                            <span>{fav.length}</span>
                                         )
                                     }
+                                    </sup></Link>
+                                   
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/Contact">Contact</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/Admin/DashBoard">Admin</Link>
                                 </li>
                             </ul>
                         </span>
